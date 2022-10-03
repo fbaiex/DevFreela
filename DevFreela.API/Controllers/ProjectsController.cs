@@ -44,5 +44,11 @@ namespace DevFreela.API.Controllers
         {
             return NoContent();
         }
+
+        [HttpPost("{id}/comments")]
+        public IActionResult PostComment(int id, [FromBody] CreateCommentModel createComment)
+        {
+
+        }
     }
 }
